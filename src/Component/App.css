@@ -36,3 +36,16 @@
     transform: rotate(360deg);
   }
 }
+
+.footer div {
+  display: inline-block;
+}
+
+.home img {
+  height: 450px;
+  padding: 30px;
+}
+
+.home div {
+  cursor: pointer;
+}

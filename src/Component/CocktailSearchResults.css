@@ -1,0 +1,12 @@
+.CocktailSearchResults li {
+    list-style-type: none;
+    display: inline-block;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.CocktailSearchResults img {
+    height: 200px;
+    width: 200px;
+}
