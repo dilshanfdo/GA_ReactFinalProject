@@ -1,0 +1,27 @@
+{
+  "files": {
+    "main.css": "/GA_ReactFinalProject/static/css/main.9d33b9cf.chunk.css",
+    "main.js": "/GA_ReactFinalProject/static/js/main.68e2243a.chunk.js",
+    "main.js.map": "/GA_ReactFinalProject/static/js/main.68e2243a.chunk.js.map",
+    "runtime-main.js": "/GA_ReactFinalProject/static/js/runtime-main.bfa2cfec.js",
+    "runtime-main.js.map": "/GA_ReactFinalProject/static/js/runtime-main.bfa2cfec.js.map",
+    "static/css/2.28bb0c3d.chunk.css": "/GA_ReactFinalProject/static/css/2.28bb0c3d.chunk.css",
+    "static/js/2.2109933a.chunk.js": "/GA_ReactFinalProject/static/js/2.2109933a.chunk.js",
+    "static/js/2.2109933a.chunk.js.map": "/GA_ReactFinalProject/static/js/2.2109933a.chunk.js.map",
+    "static/js/3.5ab73f4c.chunk.js": "/GA_ReactFinalProject/static/js/3.5ab73f4c.chunk.js",
+    "static/js/3.5ab73f4c.chunk.js.map": "/GA_ReactFinalProject/static/js/3.5ab73f4c.chunk.js.map",
+    "index.html": "/GA_ReactFinalProject/index.html",
+    "static/css/2.28bb0c3d.chunk.css.map": "/GA_ReactFinalProject/static/css/2.28bb0c3d.chunk.css.map",
+    "static/css/main.9d33b9cf.chunk.css.map": "/GA_ReactFinalProject/static/css/main.9d33b9cf.chunk.css.map",
+    "static/js/2.2109933a.chunk.js.LICENSE.txt": "/GA_ReactFinalProject/static/js/2.2109933a.chunk.js.LICENSE.txt",
+    "static/media/latest.30c21958.jpg": "/GA_ReactFinalProject/static/media/latest.30c21958.jpg",
+    "static/media/popular.e8dc89cc.jpg": "/GA_ReactFinalProject/static/media/popular.e8dc89cc.jpg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.bfa2cfec.js",
+    "static/css/2.28bb0c3d.chunk.css",
+    "static/js/2.2109933a.chunk.js",
+    "static/css/main.9d33b9cf.chunk.css",
+    "static/js/main.68e2243a.chunk.js"
+  ]
+}
