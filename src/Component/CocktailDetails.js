@@ -82,18 +82,7 @@ function CocktailDetails() {
     function goSearchResults() {
         history.push(lastVisitedURL !== '' ? lastVisitedURL : '/');
     }
-
-    function handleFavouritButtonClick() {
-        const favourits = favouritCocktails.slice();
-        const favouritIndex = favouritCocktails.indexOf(cocktailInfo.drinks[0].idDrink)
-        if( favouritIndex=== -1 ){
-            favourits.push(cocktailInfo.drinks[0].idDrink);
-        } else {
-            favourits.splice(favouritIndex, 1)
-        }
-        dispatch({ type: 'favouritCocktails/added', payload: favourits });
-    }
-
+    
     // function test() {
     //     for (let i = 0; i < 2; i++) {
     //         let ingridiant = 'strIngredient' + i;
@@ -120,8 +109,9 @@ function CocktailDetails() {
                                     <button className="btn" onClick={goPrev}><FaArrowCircleLeft /></button>
                                     <button className="btn" onClick={goNext}><FaArrowCircleRight /></button>
                                     <button
-                                        className={`btn {favouritCocktails.includes(cocktailInfo.drinks[0].idDrink) ? "btn-success" : ""}`}
-                                        onClick={handleFavouritButtonClick}
+                                        className={`btn ${cocktailInfo.drinks[0].idDrink in favouritCocktails ? "btn-success" : ""}`}
+                                        onClick={ () => dispatch( { type: 'favouritCocktails/added', payload: cocktailInfo.drinks[0].idDrink } ) }
+                                        
                                     ><MdFavorite />
                                     </button>
                                     <button className="btn" ><BiDownload /></button>

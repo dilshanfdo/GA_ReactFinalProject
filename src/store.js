@@ -10,7 +10,7 @@ const initialState = {
     slideshowIndex: 0,
     searchText: '',
     lastVisitedURL: '',
-    favouritCocktails: []
+    favouritCocktails: {}
 
 };
 
@@ -62,9 +62,15 @@ function reducer(state = initialState, action) {
                 lastVisitedURL: action.payload
             }
         case 'favouritCocktails/added':
+            let favourits = { ...state.favouritCocktails };
+            if (action.payload in favourits) {
+                delete favourits[action.payload]
+            } else {
+                favourits[action.payload] = true;
+            }
             return {
                 ...state,
-                favouritCocktails: [...state.favouritCocktails, action.payload]
+                favouritCocktails: favourits
             }
         default:
             return state
