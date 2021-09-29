@@ -1,13 +1,14 @@
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import { useHistory, useParams } from "react-router";
 import { useDispatch, useSelector } from "react-redux";
 
 import * as ReactBootstrap from 'react-bootstrap';
-import { FaArrowCircleLeft, FaArrowCircleRight, FaLeaf } from 'react-icons/fa';
+import { FaArrowCircleLeft, FaArrowCircleRight } from 'react-icons/fa';
 import { MdFavorite } from 'react-icons/md';
 import { BiDownload } from 'react-icons/bi';
 
 import Ingridiants from './Ingridiants';
+import CocktailSuggestion from './CocktailSuggestion';
 
 const SEARCH_URL = 'https://www.thecocktaildb.com/api/json/v1/1/lookup.php?i='
 
@@ -110,7 +111,7 @@ function CocktailDetails() {
                                     <button className="btn" onClick={goNext}><FaArrowCircleRight /></button>
                                     <button
                                         className={`btn ${cocktailInfo.drinks[0].idDrink in favouritCocktails ? "btn-success" : ""}`}
-                                        onClick={ () => dispatch( { type: 'favouritCocktails/added', payload: cocktailInfo.drinks[0].idDrink } ) }
+                                        onClick={ () => dispatch( { type: 'favouritCocktails/added', payload: cocktailInfo.drinks[0] } ) }
                                         
                                     ><MdFavorite />
                                     </button>
@@ -120,7 +121,7 @@ function CocktailDetails() {
 
                         </div>
 
-                        <div className="col-6 d-inline-block m-2">
+                        <div className="col-8 d-inline-block m-2">
                             <table className="table table-borderless">
                                 <tbody>
                                     <tr>
@@ -148,9 +149,13 @@ function CocktailDetails() {
                                 </tbody>
                             </table>
                         </div>
+                        <hr />
+
+                        <CocktailSuggestion />
                     </div>
                     :
                     <ReactBootstrap.Spinner animation="border" variant="success" />
+                    
             }
 
         </div>

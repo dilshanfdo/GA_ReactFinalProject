@@ -1,12 +1,10 @@
-import { useDispatch } from "react-redux";
-import { useHistory } from "react-router";
-import { HashRouter as Router, Route, Switch, Link } from 'react-router-dom';
+import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 
 import './App.css';
 //import { Navbar, Container, Row, Col, Button, NavDropdown } from 'react-bootstrap';
-import { Row, Col } from 'react-bootstrap';
+import { Row, Image } from 'react-bootstrap';
+import cocktailLogo from '../Images/cocktailLogo.jpg';
 
-import CocktailSearchForm from './CocktailSearchForm';
 import CocktailDetails from './CocktailDetails';
 import Home from './Home';
 import PopularCocktails from './PopularCocktails';
@@ -14,7 +12,6 @@ import LatestCocktails from './LatestCocktails';
 import CocktailsByName from './CocktailsByName';
 import CocktailByFirstLetter from './CocktailByFirstLetter';
 import Footer from './Footer';
-import SideBarFilter from './SideBarFilter';
 import NameFilter from './NameFilter';
 import IngridiantFilter from './IngridiantFilter';
 import CocktailsByIngridiant from './CocktailsByIngridiant';
@@ -25,6 +22,7 @@ import CocktailsByGlass from './CocktailsByGlass';
 import AlcoholicFilter from './AlcoholicFilter';
 import CocktailsAlcoholic from './CocktailsByAlcoholic';
 import CocktailNavbar from './CocktailNavbar';
+import FavouriteCocktails from "./FavouriteCocktails";
 
 function PageNotFound(props) {
   return (
@@ -42,14 +40,17 @@ function App() {
             <h2>Welcome to the Cocktail</h2>
           </Row> */}
         <div className="container bg-dark ml-0 mr-0 px-0">
-          <h2>Welcome to the Cocktail</h2>
+        <Image className={cocktailLogo} src="cocktailLogo" alt="logo"/>
+        <h2>Enjoy Your Cocktail Today</h2>
         </div>
+
         <CocktailNavbar />
         <Row className="justify-content-md-center">
           <Switch>
             <Route exact path="/" component={Home} />
             <Route path="/cocktail/popular" component={PopularCocktails} />
             <Route exact path="/cocktail/latest" component={LatestCocktails} />
+            <Route exact path="/cocktail/favourite" component={FavouriteCocktails} />
             <Route exact path="/cocktail/searchByName/:query" component={CocktailsByName} />
             <Route exact path="/cocktail/searchByIngridiant/:query" component={CocktailsByIngridiant} />
             <Route exact path="/cocktail/searchByCategory/:query" component={CocktailsByCategory} />

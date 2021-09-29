@@ -1,12 +1,11 @@
 import { useEffect } from "react";
-import { useSelector, useDispatch } from "react-redux";
+import { useDispatch } from "react-redux";
 
 import popularDrinks from "../Data/PopularCocktailDetails";
 import CocktailSearchResults from "./CocktailSearchResults";
 
 function PopularCocktails (){
 
-    const cocktailSearchResults = useSelector(state => state.cocktailSearchResults);
     const dispatch = useDispatch();
     
     // I use fake data for this and no longer need to use the API fetch
@@ -22,7 +21,8 @@ function PopularCocktails (){
     }, [] );
 
     return (
-        <div>
+        <div className="mt-3">
+            <h4>Popular Cocktails</h4>
             <CocktailSearchResults />
         </div>
     )

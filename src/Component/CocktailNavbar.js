@@ -17,7 +17,7 @@ function CocktailNavbar() {
                 dispatch({ type: 'cocktailSearchResults/added', payload: '' });
                 return history.push('/cocktail/filter/byName/');
             }
-            case 'byIngridiant':
+            case 'byIngridient':
                 return history.push('/cocktail/filter/byIngridiant/');
             case 'byCategory':
                 return history.push('/cocktail/filter/byCategory/');
@@ -41,11 +41,12 @@ function CocktailNavbar() {
                         <Link className="nav-link" to="/cocktail/latest">Latest</Link>
                         <NavDropdown title="Dropdown" id="basic-nav-dropdown" onSelect={handleFilterSelect}>
                             <NavDropdown.Item eventKey="byName">Filter By Name</NavDropdown.Item>
-                            <NavDropdown.Item eventKey="byIngridiant">Filter By Ingridiant</NavDropdown.Item>
+                            <NavDropdown.Item eventKey="byIngridient">Filter By Ingridient</NavDropdown.Item>
                             <NavDropdown.Item eventKey="byCategory">Filter By Category</NavDropdown.Item>
                             <NavDropdown.Item eventKey="byGlass">Filter By Glass</NavDropdown.Item>
                             <NavDropdown.Item eventKey="byAlcoholic">Filter By Alcoholic</NavDropdown.Item>
                         </NavDropdown>
+                        <Link className="nav-link" to="/cocktail/favourite">Favourites</Link>
                     </Nav>
                     <CocktailSearchForm />
                 </Navbar.Collapse>

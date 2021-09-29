@@ -23,13 +23,13 @@ function Home() {
                 <Row className="justify-content-md-center">
                     <Col sm={5}>
                         <div onClick={ () => handleClick('popular')}>
-                            <Image src={popular} alt="logo" />
+                            <Image src={popular} alt="popular" />
                             <h5>Popular Drinks</h5>
                         </div>
                     </Col>
                     <Col sm={5}>
                         <div onClick={ () => handleClick('latest')}>
-                            <Image src={latest} alt="logo" />
+                            <Image src={latest} alt="latest" />
                             <h5>Latest Drinks</h5>
                         </div>
                     </Col>

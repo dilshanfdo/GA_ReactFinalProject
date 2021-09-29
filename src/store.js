@@ -10,7 +10,8 @@ const initialState = {
     slideshowIndex: 0,
     searchText: '',
     lastVisitedURL: '',
-    favouritCocktails: {}
+    favouritCocktails: {},
+    cocktailSuggestions: {}
 
 };
 
@@ -63,14 +64,26 @@ function reducer(state = initialState, action) {
             }
         case 'favouritCocktails/added':
             let favourits = { ...state.favouritCocktails };
-            if (action.payload in favourits) {
-                delete favourits[action.payload]
+            if (action.payload.idDrink in favourits) {
+                delete favourits[action.payload.idDrink]
             } else {
-                favourits[action.payload] = true;
+                favourits[action.payload.idDrink] = action.payload;
             }
             return {
                 ...state,
                 favouritCocktails: favourits
+            }
+        case 'cocktailSuggestions/added':
+            let suggestion;
+            const shuffledCocktails = action.payload.drinks.sort( () => 0.5 - Math.random)
+            if (shuffledCocktails.length > 4) {
+                suggestion = shuffledCocktails.slice(0, 4)
+            } else {
+                suggestion = shuffledCocktails
+            }
+            return {
+                ...state,
+                cocktailSuggestions: suggestion
             }
         default:
             return state

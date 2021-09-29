@@ -18,19 +18,16 @@ function CocktailSearchResults(props) {
     }
 
     return (
-        <div>
+        <div className="mt-5">
             <ul className="CocktailSearchResults">
                 {
 
-                    Object.entries(cocktailSearchResults).length > 0
+                    cocktailSearchResults.drinks
                         ?
                         cocktailSearchResults.drinks.map((drink, index) => (
-                            <li key={drink.idDrink}>
-                                <img
-                                    src={drink.strDrinkThumb}
-                                    alt={drink.strDrink}
-                                    onClick={() => handleImgClick( drink, index )}
-                                />
+                            <li key={drink.idDrink} onClick={() => handleImgClick(drink, index)}>
+                                <img src={drink.strDrinkThumb} alt={drink.strDrink}/>
+                                <p className="mt-2">{drink.strDrink}</p>
                             </li>
                         ))
                         :

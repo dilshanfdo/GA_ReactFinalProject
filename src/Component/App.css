@@ -49,3 +49,12 @@
 .home div {
   cursor: pointer;
 }
+
+.cocktailLogo {
+  height: 450px;
+  width: 450px;
+}
+
+.ingridientTable div {
+  cursor: pointer;
+}
