@@ -4,6 +4,7 @@ import './App.css';
 //import { Navbar, Container, Row, Col, Button, NavDropdown } from 'react-bootstrap';
 import { Row, Image } from 'react-bootstrap';
 import cocktailLogo from '../Images/cocktailLogo.jpg';
+import logo from '../Images/logo.png';
 
 import CocktailDetails from './CocktailDetails';
 import Home from './Home';
@@ -39,12 +40,13 @@ function App() {
         {/* <Row className="justify-content-md-center">
             <h2>Welcome to the Cocktail</h2>
           </Row> */}
-        <div className="container bg-dark ml-0 mr-0 px-0">
-        <Image className={cocktailLogo} src="cocktailLogo" alt="logo"/>
-        <h2>Enjoy Your Cocktail Today</h2>
+        <div className="container-fluid bg-dark mx-0 my-0">
+          <Image className="cocktailLogo d-inline-block mt-2" src={logo} alt="logo" />
+          <h2 className="mb-0 navHeading d-inline-block">Enjoy Your Cocktail Today</h2> 
         </div>
 
         <CocktailNavbar />
+
         <Row className="justify-content-md-center">
           <Switch>
             <Route exact path="/" component={Home} />

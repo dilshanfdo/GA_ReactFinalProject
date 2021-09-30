@@ -51,10 +51,27 @@
 }
 
 .cocktailLogo {
-  height: 450px;
-  width: 450px;
+  height: 150px;
+  width: 150px;
 }
 
 .ingridientTable div {
   cursor: pointer;
+}
+
+.navHeading {
+  color:burlywood;
+  font-family: Lucida Handwriting;
+  
+}
+
+.cocktailDetailImg {
+  height: 600px;
+  width: 600px;
+  vertical-align: top;
+}
+
+#table{
+  border-collapse: separate;
+  border-spacing: 15px;
 }

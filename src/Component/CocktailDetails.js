@@ -101,50 +101,51 @@ function CocktailDetails() {
                 cocktailInfo.drinks
                     ?
                     <div>
-                        <div className="col-4 d-inline m-2">
-                            <img className="" src={cocktailInfo.drinks[0].strDrinkThumb} />
+                        <div className="col-6 d-inline m-2">
+                            <img className="cocktailDetailImg mt-5 mb-3" src={cocktailInfo.drinks[0].strDrinkThumb} />
                             {
                                 cocktailSearchResults.drinks
                                 &&
                                 <div>
-                                    <button className="btn" onClick={goPrev}><FaArrowCircleLeft /></button>
-                                    <button className="btn" onClick={goNext}><FaArrowCircleRight /></button>
+                                    <button className="btn btn-lg" onClick={goPrev}><FaArrowCircleLeft /></button>
+                                    <button className="btn btn-lg" onClick={goNext}><FaArrowCircleRight /></button>
                                     <button
-                                        className={`btn ${cocktailInfo.drinks[0].idDrink in favouritCocktails ? "btn-success" : ""}`}
+                                        className={`btn btn-lg ${cocktailInfo.drinks[0].idDrink in favouritCocktails ? "btn-success" : ""}`}
                                         onClick={ () => dispatch( { type: 'favouritCocktails/added', payload: cocktailInfo.drinks[0] } ) }
                                         
                                     ><MdFavorite />
                                     </button>
-                                    <button className="btn" ><BiDownload /></button>
+                                    <button className="btn btn-lg" ><BiDownload /></button>
                                 </div>
                             }
 
                         </div>
+                        {/* <div className="col-1 d-inline-block"></div> */}
 
-                        <div className="col-8 d-inline-block m-2">
+                        <div className="col-5 d-inline-block m-5">
                             <table className="table table-borderless">
                                 <tbody>
                                     <tr>
                                         <th scope="row">Name</th>
-                                        <td >{cocktailInfo.drinks[0].strDrink}</td>
+                                        <td className="text-start">{cocktailInfo.drinks[0].strDrink}</td>
                                     </tr>
                                     <tr>
                                         <th scope="row">Category</th>
-                                        <td>{cocktailInfo.drinks[0].strCategory}</td>
+                                        <td className="text-start">{cocktailInfo.drinks[0].strCategory}</td>
                                     </tr>
                                     <tr>
                                         <th scope="row">Glass</th>
-                                        <td>{cocktailInfo.drinks[0].strGlass}</td>
+                                        <td className="text-start">{cocktailInfo.drinks[0].strGlass}</td>
                                     </tr>
                                     <tr>
                                         <th scope="row">Ingridiants</th>
-                                        <td>
+                                        <td className="text-start">
                                             <Ingridiants />
                                         </td>
                                     </tr>
                                     <tr>
                                         <th scope="row">Instruction</th>
-                                        <td>{cocktailInfo.drinks[0].strInstructions}</td>
+                                        <td className="text-start">{cocktailInfo.drinks[0].strInstructions}</td>
                                     </tr>
                                 </tbody>
                             </table>

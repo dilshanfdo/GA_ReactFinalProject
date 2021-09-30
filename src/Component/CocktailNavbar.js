@@ -39,7 +39,7 @@ function CocktailNavbar() {
                         <Link className="nav-link" to="/">Home</Link>
                         <Link className="nav-link" to="/cocktail/popular">Popular</Link>
                         <Link className="nav-link" to="/cocktail/latest">Latest</Link>
-                        <NavDropdown title="Dropdown" id="basic-nav-dropdown" onSelect={handleFilterSelect}>
+                        <NavDropdown title="Filter By" id="basic-nav-dropdown" onSelect={handleFilterSelect}>
                             <NavDropdown.Item eventKey="byName">Filter By Name</NavDropdown.Item>
                             <NavDropdown.Item eventKey="byIngridient">Filter By Ingridient</NavDropdown.Item>
                             <NavDropdown.Item eventKey="byCategory">Filter By Category</NavDropdown.Item>

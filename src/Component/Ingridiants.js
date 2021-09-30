@@ -15,95 +15,107 @@ function Ingridiants() {
         return `https:www.thecocktaildb.com/images/ingredients/${ingridiant}-Small.png`;
     }
 
-    function handleIngridientClick ( ingridient ){
-        history.push ( `/cocktail/searchByIngridiant/${ ingridient }` );
+    function handleIngridientClick(ingridient) {
+        history.push(`/cocktail/searchByIngridiant/${ingridient}`);
     }
 
     return (
-        <table className="table table-borderless table-sm ingridientTable">
+        <table id="table" className="table table-borderless table-sm ingridientTable">
             <tbody className="d-inline-block">
                 <tr>
-                    <td>
-                        <div onClick={ () => handleIngridientClick(cocktailInfo.drinks[0].strIngredient1)}>
+                    <td className="text-center">
+                        <div onClick={() => handleIngridientClick(cocktailInfo.drinks[0].strIngredient1)}>
                             <img
                                 className="m-0"
                                 alt={cocktailInfo.drinks[0].strIngredient1}
                                 src={getIngridiantImgs(cocktailInfo.drinks[0].strIngredient1)}
                             />
-                            <p>{cocktailInfo.drinks[0].strIngredient1}</p>
+                            <p className="mb-0">{cocktailInfo.drinks[0].strIngredient1}</p>
+                            <p>{cocktailInfo.drinks[0].strMeasure1}</p>
                         </div>
                     </td>
-
-                    <td>
-                        <div onClick={ () => handleIngridientClick(cocktailInfo.drinks[0].strIngredient2)}>
+                    <br />
+                    <td className="text-center">
+                        <div onClick={() => handleIngridientClick(cocktailInfo.drinks[0].strIngredient2)}>
                             <img
                                 className="m-0"
                                 alt={cocktailInfo.drinks[0].strIngredient2}
                                 src={getIngridiantImgs(cocktailInfo.drinks[0].strIngredient2)}
                             />
-                            <p>{cocktailInfo.drinks[0].strIngredient2}</p>
+                             <p className="mb-0">{cocktailInfo.drinks[0].strIngredient2}</p>
+                            <p>{cocktailInfo.drinks[0].strMeasure2}</p>
                         </div>
                     </td>
-                    <td>
-                        <div onClick={ () => handleIngridientClick(cocktailInfo.drinks[0].strIngredient3)}>
+                    <br />
+                    <td className="text-center">
+                        <div onClick={() => handleIngridientClick(cocktailInfo.drinks[0].strIngredient3)}>
                             <img
                                 className="m-0"
                                 src={getIngridiantImgs(cocktailInfo.drinks[0].strIngredient3)}
                                 alt={cocktailInfo.drinks[0].strIngredient3}
                             />
-                            <p>{cocktailInfo.drinks[0].strIngredient3}</p>
+                            <p className="mb-0">{cocktailInfo.drinks[0].strIngredient3}</p>
+                            <p>{cocktailInfo.drinks[0].strMeasure3}</p>
                         </div>
                     </td>
-                    <td>
-                        <div onClick={ () => handleIngridientClick(cocktailInfo.drinks[0].strIngredient4)}>
+                    <br />
+                    <td className="text-center">
+                        <div onClick={() => handleIngridientClick(cocktailInfo.drinks[0].strIngredient4)}>
                             <img
                                 className="m-0"
                                 src={getIngridiantImgs(cocktailInfo.drinks[0].strIngredient4)}
                                 alt={cocktailInfo.drinks[0].strIngredient4}
                             />
-                            <p>{cocktailInfo.drinks[0].strIngredient4}</p>
+                             <p className="mb-0">{cocktailInfo.drinks[0].strIngredient4}</p>
+                            <p>{cocktailInfo.drinks[0].strMeasure4}</p>
                         </div>
                     </td>
                 </tr>
                 <tr>
-                    <td>
-                        <div onClick={ () => handleIngridientClick(cocktailInfo.drinks[0].strIngredient5)}>
+                    <td className="text-center">
+                        <div onClick={() => handleIngridientClick(cocktailInfo.drinks[0].strIngredient5)}>
                             <img
                                 className="m-0"
                                 src={getIngridiantImgs(cocktailInfo.drinks[0].strIngredient5)}
                                 alt={cocktailInfo.drinks[0].strIngredient5}
                             />
-                            <p>{cocktailInfo.drinks[0].strIngredient5}</p>
+                             <p className="mb-0">{cocktailInfo.drinks[0].strIngredient5}</p>
+                            <p>{cocktailInfo.drinks[0].strMeasure5}</p>
                         </div>
                     </td>
-                    <td>
-                        <div onClick={ () => handleIngridientClick(cocktailInfo.drinks[0].strIngredient6)}>
+                    <br />
+                    <td className="text-center">
+                        <div onClick={() => handleIngridientClick(cocktailInfo.drinks[0].strIngredient6)}>
                             <img
                                 className="m-0"
                                 src={getIngridiantImgs(cocktailInfo.drinks[0].strIngredient6)}
                                 alt={cocktailInfo.drinks[0].strIngredient6}
                             />
-                            <p>{cocktailInfo.drinks[0].strIngredient6}</p>
+                             <p className="mb-0">{cocktailInfo.drinks[0].strIngredient6}</p>
+                            <p>{cocktailInfo.drinks[0].strMeasure6}</p>
                         </div>
                     </td>
-                    <td>
-                        <div onClick={ () => handleIngridientClick(cocktailInfo.drinks[0].strIngredient7)}>
+                    <br />
+                    <td className="text-center">
+                        <div onClick={() => handleIngridientClick(cocktailInfo.drinks[0].strIngredient7)}>
                             <img
                                 className="m-0"
                                 src={getIngridiantImgs(cocktailInfo.drinks[0].strIngredient7)}
                                 alt={cocktailInfo.drinks[0].strIngredient7}
                             />
-                            <p>{cocktailInfo.drinks[0].strIngredient7}</p>
+                             <p className="mb-0">{cocktailInfo.drinks[0].strIngredient7}</p>
+                            <p>{cocktailInfo.drinks[0].strMeasure7}</p>
                         </div>
                     </td>
-                    <td>
-                        <div onClick={ () => handleIngridientClick(cocktailInfo.drinks[0].strIngredient8)}>
+                    <td className="text-center">
+                        <div onClick={() => handleIngridientClick(cocktailInfo.drinks[0].strIngredient8)}>
                             <img
                                 className="m-0"
                                 src={getIngridiantImgs(cocktailInfo.drinks[0].strIngredient8)}
                                 alt={cocktailInfo.drinks[0].strIngredient8}
                             />
-                            <p>{cocktailInfo.drinks[0].strIngredient8}</p>
+                             <p className="mb-0">{cocktailInfo.drinks[0].strIngredient8}</p>
+                            <p>{cocktailInfo.drinks[0].strMeasure8}</p>
                         </div>
                     </td>
                 </tr>
