@@ -37,12 +37,9 @@ function App() {
   return (
     <div className="App">
       <Router>
-        {/* <Row className="justify-content-md-center">
-            <h2>Welcome to the Cocktail</h2>
-          </Row> */}
         <div className="container-fluid bg-dark mx-0 my-0">
           <Image className="cocktailLogo d-inline-block mt-2" src={logo} alt="logo" />
-          <h2 className="mb-0 navHeading d-inline-block">Enjoy Your Cocktail Today</h2> 
+          <h2 className="mb-0 navHeading d-inline-block align-text-bottom">Enjoy Your Cocktail Today</h2>
         </div>
 
         <CocktailNavbar />

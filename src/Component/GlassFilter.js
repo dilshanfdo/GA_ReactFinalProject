@@ -27,7 +27,7 @@ function GlassFilter() {
 
     return (
 
-        <div className="col-2">
+        <div className="d-flex justify-content-start">
             <ul className="list-group d-inlin-block">
                 {
 

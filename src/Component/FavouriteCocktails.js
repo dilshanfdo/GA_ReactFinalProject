@@ -23,7 +23,7 @@ function FavouriteCocktails() {
 
     return (
         <div className="mt-3">
-            <h4 className="mb-5">My Favourit Cocktails</h4>
+            <h4 className="mb-5">My Favourite Cocktails</h4>
             <ul className="CocktailSearchResults">
                 {
 

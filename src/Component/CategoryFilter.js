@@ -27,7 +27,7 @@ function CategoryFilter() {
     return (
 
         <div>
-            <ul className="CocktailSearchResults">
+            <ul className="CocktailSearchResults w-100">
                 {
 
                     Object.entries(categorySearchResults).length > 0

@@ -23,7 +23,7 @@ function CocktailsByGlass() {
     }, [params.query]);
 
     return (
-        <div className="">
+        <div className="d-flex">
             <div>
                 <GlassFilter />
             </div>

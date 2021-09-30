@@ -26,7 +26,7 @@ function CocktailSearchForm(props) {
     return (
         <div className="d-none d-lg-block">
             <Form className="d-flex" onSubmit={handleSubmit}>
-                <input className="form-control"
+                <input className="form-control me-2"
                     type="text"
                     value={searchText}
                     onChange={handleSearchText}

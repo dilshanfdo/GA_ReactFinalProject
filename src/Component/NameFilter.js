@@ -1,6 +1,7 @@
 import { useSelector, useDispatch } from "react-redux";
 
 import { Form } from "react-bootstrap";
+import { BsSearch } from 'react-icons/bs';
 
 import CocktailSearchResults from "./CocktailSearchResults";
 
@@ -24,13 +25,16 @@ function NameFilter() {
 
     return (
         <div>
-            <div className="container m-5 w-25">
+            <div className="container m-5 w-25 ">
                 <Form>
-                    <input
-                        className="form-control"
-                        type="text"
-                        onChange={handleChange}
-                    />
+                    <div className="input-group">
+                        <input
+                            className="form-control"
+                            type="text"
+                            onChange={handleChange}
+                        />
+                        <span className="input-group-text" id="basic-addon1"><BsSearch /></span>
+                    </div>
                 </Form>
             </div>
 
