@@ -25,7 +25,7 @@ function CocktailsByName() {
                     ?
                     <CocktailSearchResults />
                     :
-                    <p>Cocktail not found !</p>
+                    <p className="mt-5">Sorry...! Cocktail not found.</p>
             }
         </div>
     )
