@@ -1,29 +1,29 @@
 {
   "files": {
     "main.css": "/GA_ReactFinalProject/static/css/main.ca8e2714.chunk.css",
-    "main.js": "/GA_ReactFinalProject/static/js/main.45ca2d42.chunk.js",
-    "main.js.map": "/GA_ReactFinalProject/static/js/main.45ca2d42.chunk.js.map",
-    "runtime-main.js": "/GA_ReactFinalProject/static/js/runtime-main.d762d4e6.js",
-    "runtime-main.js.map": "/GA_ReactFinalProject/static/js/runtime-main.d762d4e6.js.map",
+    "main.js": "/GA_ReactFinalProject/static/js/main.1e37c078.chunk.js",
+    "main.js.map": "/GA_ReactFinalProject/static/js/main.1e37c078.chunk.js.map",
+    "runtime-main.js": "/GA_ReactFinalProject/static/js/runtime-main.315ef97f.js",
+    "runtime-main.js.map": "/GA_ReactFinalProject/static/js/runtime-main.315ef97f.js.map",
     "static/css/2.28bb0c3d.chunk.css": "/GA_ReactFinalProject/static/css/2.28bb0c3d.chunk.css",
-    "static/js/2.2b2f66da.chunk.js": "/GA_ReactFinalProject/static/js/2.2b2f66da.chunk.js",
-    "static/js/2.2b2f66da.chunk.js.map": "/GA_ReactFinalProject/static/js/2.2b2f66da.chunk.js.map",
-    "static/js/3.aba300e9.chunk.js": "/GA_ReactFinalProject/static/js/3.aba300e9.chunk.js",
-    "static/js/3.aba300e9.chunk.js.map": "/GA_ReactFinalProject/static/js/3.aba300e9.chunk.js.map",
+    "static/js/2.e1ada5b8.chunk.js": "/GA_ReactFinalProject/static/js/2.e1ada5b8.chunk.js",
+    "static/js/2.e1ada5b8.chunk.js.map": "/GA_ReactFinalProject/static/js/2.e1ada5b8.chunk.js.map",
+    "static/js/3.1585688e.chunk.js": "/GA_ReactFinalProject/static/js/3.1585688e.chunk.js",
+    "static/js/3.1585688e.chunk.js.map": "/GA_ReactFinalProject/static/js/3.1585688e.chunk.js.map",
     "index.html": "/GA_ReactFinalProject/index.html",
     "static/css/2.28bb0c3d.chunk.css.map": "/GA_ReactFinalProject/static/css/2.28bb0c3d.chunk.css.map",
     "static/css/main.ca8e2714.chunk.css.map": "/GA_ReactFinalProject/static/css/main.ca8e2714.chunk.css.map",
-    "static/js/2.2b2f66da.chunk.js.LICENSE.txt": "/GA_ReactFinalProject/static/js/2.2b2f66da.chunk.js.LICENSE.txt",
+    "static/js/2.e1ada5b8.chunk.js.LICENSE.txt": "/GA_ReactFinalProject/static/js/2.e1ada5b8.chunk.js.LICENSE.txt",
     "static/media/cocktailLogo.30c21958.jpg": "/GA_ReactFinalProject/static/media/cocktailLogo.30c21958.jpg",
     "static/media/latest.2249644a.jpg": "/GA_ReactFinalProject/static/media/latest.2249644a.jpg",
     "static/media/logo.24834a69.png": "/GA_ReactFinalProject/static/media/logo.24834a69.png",
     "static/media/popular.e8dc89cc.jpg": "/GA_ReactFinalProject/static/media/popular.e8dc89cc.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.d762d4e6.js",
+    "static/js/runtime-main.315ef97f.js",
     "static/css/2.28bb0c3d.chunk.css",
-    "static/js/2.2b2f66da.chunk.js",
+    "static/js/2.e1ada5b8.chunk.js",
     "static/css/main.ca8e2714.chunk.css",
-    "static/js/main.45ca2d42.chunk.js"
+    "static/js/main.1e37c078.chunk.js"
   ]
 }
