@@ -12,7 +12,7 @@ function Ingridiants() {
         if (ingridiant === null || ingridiant === "") {
             return "";
         }
-        return `https:www.thecocktaildb.com/images/ingredients/${ingridiant}-Small.png`;
+        return `https://www.thecocktaildb.com/images/ingredients/${ingridiant}-Small.png`;
     }
 
     function handleIngridientClick(ingridient) {

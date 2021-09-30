@@ -28,7 +28,7 @@ function GlassFilter() {
     return (
 
         <div className="col-2">
-            <ul className="list-group">
+            <ul className="list-group d-inlin-block">
                 {
 
                     Object.entries(glassSearchResults).length > 0
