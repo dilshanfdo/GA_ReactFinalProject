@@ -3,8 +3,8 @@ import { HashRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
 //import { Navbar, Container, Row, Col, Button, NavDropdown } from 'react-bootstrap';
 import { Row, Image } from 'react-bootstrap';
-import cocktailLogo from '../Images/cocktailLogo.jpg';
 import logo from '../Images/logo.png';
+import { RiErrorWarningFill } from 'react-icons/ri';
 
 import CocktailDetails from './CocktailDetails';
 import Home from './Home';
@@ -24,11 +24,13 @@ import AlcoholicFilter from './AlcoholicFilter';
 import CocktailsAlcoholic from './CocktailsByAlcoholic';
 import CocktailNavbar from './CocktailNavbar';
 import FavouriteCocktails from "./FavouriteCocktails";
+import CocktailSearchForm from './CocktailSearchForm';
 
 function PageNotFound(props) {
   return (
-    <div>
-      <strong>Sorry! Page not found</strong>
+    <div className="mt-5">
+      <span><RiErrorWarningFill /></span>
+      <p>Sorry! Page not found</p>
     </div>
   )
 }
@@ -37,17 +39,24 @@ function App() {
   return (
     <div className="App">
       <Router>
-        <div className="container-fluid bg-dark mx-0 my-0">
-          <Image className="cocktailLogo d-inline-block mt-2" src={logo} alt="logo" />
-          <h2 className="mb-0 navHeading d-inline-block align-text-bottom">Enjoy Your Cocktail Today</h2>
-        </div>
 
-        <CocktailNavbar />
+        <div className="container-fluid bg-dark mx-0 my-0">
+          <div className="d-inline-block w-25 align-bottom pb-3">
+            <CocktailNavbar />
+          </div>
+          <div className="d-inline-block w-50 pb-2">
+            <Image className="cocktailLogo d-inline-block mt-3" src={logo} alt="logo" />
+            <h2 className="mb-0 navHeading d-inline-block">Enjoy Your Cocktail Today</h2>
+          </div>
+          <div className="d-inline-block w-25 align-bottom pb-3">
+            <CocktailSearchForm ></CocktailSearchForm>
+          </div>
+        </div>
 
         <Row className="justify-content-md-center">
           <Switch>
             <Route exact path="/" component={Home} />
-            <Route path="/cocktail/popular" component={PopularCocktails} />
+            <Route exact path="/cocktail/popular" component={PopularCocktails} />
             <Route exact path="/cocktail/latest" component={LatestCocktails} />
             <Route exact path="/cocktail/favourite" component={FavouriteCocktails} />
             <Route exact path="/cocktail/searchByName/:query" component={CocktailsByName} />

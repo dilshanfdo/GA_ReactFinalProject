@@ -32,8 +32,9 @@ function CocktailSuggestion() {
     }
 
     return (
-        <div>
-            <h3 className="mb-5">You would like these too</h3>
+        <div className="mb-5 pb-5">
+            <hr />
+            <h3 className="mb-5">You may like these too...!</h3>
             <ul className="CocktailSearchResults">
             {
                 //console.log(cocktailSuggestions)

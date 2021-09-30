@@ -35,7 +35,7 @@ function GlassFilter() {
                         ?
                         glassSearchResults.drinks.map((glass) => (
                             <li
-                                className="list-group-item list-group-item-action"
+                                className="glassFilter list-group-item list-group-item-action"
                                 key={glass.strGlass}
                                 onClick={ () => handleGlassButtonClick( glass.strGlass ) }
                             >

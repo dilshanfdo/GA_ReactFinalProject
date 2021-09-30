@@ -48,7 +48,7 @@ function CocktailNavbar() {
                         </NavDropdown>
                         <Link className="nav-link" to="/cocktail/favourite">Favourites</Link>
                     </Nav>
-                    <CocktailSearchForm />
+                    {/* <CocktailSearchForm /> */}
                 </Navbar.Collapse>
             </Container>
         </Navbar>

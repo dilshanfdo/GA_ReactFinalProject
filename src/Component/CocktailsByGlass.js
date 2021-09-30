@@ -23,11 +23,11 @@ function CocktailsByGlass() {
     }, [params.query]);
 
     return (
-        <div className="d-flex">
+        <div className=" d-flex">
             <div>
                 <GlassFilter />
             </div>
-            <div className="col-7">
+            <div className="col-10">
                 {
                     cocktailSearchResults.drinks !== null
                         ?
