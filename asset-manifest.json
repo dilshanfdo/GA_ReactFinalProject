@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/GA_ReactFinalProject/static/css/main.ca8e2714.chunk.css",
-    "main.js": "/GA_ReactFinalProject/static/js/main.7cc9a22d.chunk.js",
-    "main.js.map": "/GA_ReactFinalProject/static/js/main.7cc9a22d.chunk.js.map",
+    "main.js": "/GA_ReactFinalProject/static/js/main.5f412048.chunk.js",
+    "main.js.map": "/GA_ReactFinalProject/static/js/main.5f412048.chunk.js.map",
     "runtime-main.js": "/GA_ReactFinalProject/static/js/runtime-main.d762d4e6.js",
     "runtime-main.js.map": "/GA_ReactFinalProject/static/js/runtime-main.d762d4e6.js.map",
     "static/css/2.28bb0c3d.chunk.css": "/GA_ReactFinalProject/static/css/2.28bb0c3d.chunk.css",
-    "static/js/2.f492efef.chunk.js": "/GA_ReactFinalProject/static/js/2.f492efef.chunk.js",
-    "static/js/2.f492efef.chunk.js.map": "/GA_ReactFinalProject/static/js/2.f492efef.chunk.js.map",
+    "static/js/2.2b2f66da.chunk.js": "/GA_ReactFinalProject/static/js/2.2b2f66da.chunk.js",
+    "static/js/2.2b2f66da.chunk.js.map": "/GA_ReactFinalProject/static/js/2.2b2f66da.chunk.js.map",
     "static/js/3.aba300e9.chunk.js": "/GA_ReactFinalProject/static/js/3.aba300e9.chunk.js",
     "static/js/3.aba300e9.chunk.js.map": "/GA_ReactFinalProject/static/js/3.aba300e9.chunk.js.map",
     "index.html": "/GA_ReactFinalProject/index.html",
     "static/css/2.28bb0c3d.chunk.css.map": "/GA_ReactFinalProject/static/css/2.28bb0c3d.chunk.css.map",
     "static/css/main.ca8e2714.chunk.css.map": "/GA_ReactFinalProject/static/css/main.ca8e2714.chunk.css.map",
-    "static/js/2.f492efef.chunk.js.LICENSE.txt": "/GA_ReactFinalProject/static/js/2.f492efef.chunk.js.LICENSE.txt",
+    "static/js/2.2b2f66da.chunk.js.LICENSE.txt": "/GA_ReactFinalProject/static/js/2.2b2f66da.chunk.js.LICENSE.txt",
     "static/media/cocktailLogo.30c21958.jpg": "/GA_ReactFinalProject/static/media/cocktailLogo.30c21958.jpg",
     "static/media/latest.2249644a.jpg": "/GA_ReactFinalProject/static/media/latest.2249644a.jpg",
     "static/media/logo.24834a69.png": "/GA_ReactFinalProject/static/media/logo.24834a69.png",
@@ -22,8 +22,8 @@
   "entrypoints": [
     "static/js/runtime-main.d762d4e6.js",
     "static/css/2.28bb0c3d.chunk.css",
-    "static/js/2.f492efef.chunk.js",
+    "static/js/2.2b2f66da.chunk.js",
     "static/css/main.ca8e2714.chunk.css",
-    "static/js/main.7cc9a22d.chunk.js"
+    "static/js/main.5f412048.chunk.js"
   ]
 }
