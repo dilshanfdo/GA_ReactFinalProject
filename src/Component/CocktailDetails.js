@@ -96,75 +96,77 @@ function CocktailDetails() {
 
     return (
         <>
-            < div className="d-flex m-2" >
-                {
-                    cocktailInfo.drinks
-                        ?
-                        <>
-                            <div className="col-5 d-inline m-2">
-                                <div>
-                                    <img className="cocktailDetailImg mt-5 mb-3" src={cocktailInfo.drinks[0].strDrinkThumb} />
-                                    {
-                                        cocktailSearchResults.drinks
-                                        &&
-                                        <div>
-                                            <button className="btn btn-lg" onClick={goPrev}><FaArrowCircleLeft /></button>
-                                            <button className="btn btn-lg" onClick={goNext}><FaArrowCircleRight /></button>
-                                            <button
-                                                className={`btn btn-lg ${cocktailInfo.drinks[0].idDrink in favouritCocktails ? "btn-success" : ""}`}
-                                                onClick={() => dispatch({ type: 'favouritCocktails/added', payload: cocktailInfo.drinks[0] })}
+            {
+                cocktailInfo.drinks
+                    ?
+                    (<>
+                        < div className="d-flex m-2" >
+                            <>
+                                <div className="col-5 d-inline m-2">
+                                    <div>
+                                        <img className="cocktailDetailImg mt-5 mb-3" src={cocktailInfo.drinks[0].strDrinkThumb} />
+                                        {
+                                            cocktailSearchResults.drinks
+                                            &&
+                                            <div>
+                                                <button className="btn btn-lg" onClick={goPrev}><FaArrowCircleLeft /></button>
+                                                <button className="btn btn-lg" onClick={goNext}><FaArrowCircleRight /></button>
+                                                <button
+                                                    className={`btn btn-lg ${cocktailInfo.drinks[0].idDrink in favouritCocktails ? "btn-success" : ""}`}
+                                                    onClick={() => dispatch({ type: 'favouritCocktails/added', payload: cocktailInfo.drinks[0] })}
 
-                                            ><MdFavorite />
-                                            </button>
-                                            <button className="btn btn-lg" ><BiDownload /></button>
-                                        </div>
+                                                ><MdFavorite />
+                                                </button>
+                                                <button className="btn btn-lg" ><BiDownload /></button>
+                                            </div>
 
-                                    }
+                                        }
+                                    </div>
+
                                 </div>
+                                {/* <div className="col-1 d-inline-block"></div> */}
 
-                            </div>
-                            {/* <div className="col-1 d-inline-block"></div> */}
-
-                            <div className="col-5 d-inline-block m-5">
-                                <table className="table table-borderless">
-                                    <tbody>
-                                        <tr>
-                                            <th scope="row">Name</th>
-                                            <td className="text-start">{cocktailInfo.drinks[0].strDrink}</td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">Category</th>
-                                            <td className="text-start">{cocktailInfo.drinks[0].strCategory}</td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">Glass</th>
-                                            <td className="text-start">{cocktailInfo.drinks[0].strGlass}</td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">Ingridiants</th>
-                                            <td className="text-start">
+                                <div className="col-5 d-inline-block m-5">
+                                    <table className="table table-borderless">
+                                        <tbody>
+                                            <tr>
+                                                <th scope="row">Name</th>
+                                                <td className="text-start">{cocktailInfo.drinks[0].strDrink}</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Category</th>
+                                                <td className="text-start">{cocktailInfo.drinks[0].strCategory}</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Glass</th>
+                                                <td className="text-start">{cocktailInfo.drinks[0].strGlass}</td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Ingridiants</th>
                                                 <Ingridiants />
-                                            </td>
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">Instruction</th>
-                                            <td className="text-start">{cocktailInfo.drinks[0].strInstructions}</td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-                            <hr />
+                                                <td className="text-start">
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">Instruction</th>
+                                                <td className="text-start">{cocktailInfo.drinks[0].strInstructions}</td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                                <hr />
 
-                        </>
-                        :
-                        <ReactBootstrap.Spinner animation="border" variant="success" />
+                            </>
 
-                }
 
-            </div>
+                        </div>
 
-            <CocktailSuggestion />
+                        <CocktailSuggestion />
 
+                    </>)
+                    :
+                    <ReactBootstrap.Spinner animation="border" variant="success" />
+            }
         </>
     )
 }
